@@ -1,0 +1,20 @@
+{
+    "appenders": [{
+        "type": "clustered",
+        "appenders": [{ "type": "console" }, {
+            "type": "file",
+            "filename": "/app.log",
+            "maxLogSize": 1048576,
+            "backups": 5
+        }, {
+            "type": "logLevelFilter",
+            "level": "ERROR",
+            "maxLogSize": 1048576,
+            "backups": 5,
+            "appender": {
+                "type": "file",
+                "filename": "/errors.log"
+            }
+        }]
+    }]
+}

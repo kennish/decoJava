@@ -1,0 +1,10 @@
+{
+    "apps": [{
+        "name": "mstp-pre-v1.0.0",
+        "script": "./server.js",
+        "watch": false,
+        
+        "exec_interpreter": "babel-node",
+        "exec_mode": "fork"
+    }]
+}
